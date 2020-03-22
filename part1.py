@@ -1,4 +1,5 @@
 import numpy as np
+import math
 
 # way faster thanks to the use of searchsorted
 def find_nearest_sorted(array,value):
@@ -72,5 +73,3 @@ def greedy_withHeuristic(houseArray, heuristicFunc):
 
 def parcours(houseList):
     return greedy_withHeuristic(houseList, greedy_nearestHeuristic)
-
-parcours([1])
